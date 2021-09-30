@@ -38,7 +38,7 @@
     background-size: cover;
   } */
 .top{
-    background-image: url("../images/img1.jpeg");
+    background-image: url("../images/img1.jpg");
     margin: -10px;
     margin-top: -19px;
     width: 101.45%;
@@ -46,15 +46,73 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
+
 .Main{
     color: rgb(255, 65, 31);
-    font-size: 80px;
+    font-size: 5.938rem;
     margin-top: 0;
     padding-left: 65px;
+    font-family: 'Ephesis', cursive;
+
 }
 h3{
     color: white;
     padding: 70px 0px 0px 20px;
+}
+.about{
+  margin-top: 55px;
+}
+.heading{
+  text-align: center;
+  font-size: 3.4375rem;
+  font-family: 'Stick No Bills', sans-serif;
+  color: rgb(255, 65, 31);
+
+}
+.about p{
+  width: 70%;
+  text-align: center;
+  margin-left: 15%;
+  font-size: 1.188rem;
+  margin-top: -30px;
+  word-spacing: 2px;
+  letter-spacing: 1.25px;
+  color: gray;
+}
+
+hr{
+  margin-left: 45%;
+  width: 10%;
+  background-color: red;
+  border: none;
+  height: 2px;
+}
+.projects {
+  width: 20%;
+  display: inline-block;
+  border-radius: 12px;
+  border: 1px solid rgb(202, 200, 200);
+  margin-left: 3%;
+  height: 350px;
+}
+.one{
+  background-image: url("../images/img1.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  
+}
+.one:hover{
+  background-size: 125%;
+  background-position-x: -30px;
+
+}
+.two{
+  background-image: url("../images/img1.jpg");
+}
+.three{
+  background-image: url("../images/img1.jpg");
+}
+.four{
+  background-image: url("../images/img1.jpg");
 }
