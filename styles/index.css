@@ -88,7 +88,7 @@ hr{
   border: none;
   height: 2px;
 }
-.projects {
+.project {
   width: 20%;
   display: inline-block;
   border-radius: 12px;
@@ -97,22 +97,62 @@ hr{
   height: 350px;
 }
 .one{
-  background-image: url("../images/img1.jpg");
+  background-image: url("../images/project1.jpeg");
   background-size: 100%;
   background-repeat: no-repeat;
   
 }
-.one:hover{
-  background-size: 125%;
-  background-position-x: -30px;
-
-}
 .two{
-  background-image: url("../images/img1.jpg");
+  background-image: url("../images/project2.jpeg");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 .three{
-  background-image: url("../images/img1.jpg");
+  background-image: url("../images/project3.jpeg");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 .four{
-  background-image: url("../images/img1.jpg");
+  background-image: url("../images/project4.jpeg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.projects div:hover{
+  transition: all 0.6s ease;
+  background-size: 125%;
+  background-position-x: -30px;
+}
+
+.pro-link{
+  color: rgb(255, 65, 31);
+  margin-top: 70px;
+}
+.project p{
+  padding: 5px;
+  text-align: justify;
+  letter-spacing: 1.25px;
+  color: gray;
+}
+.link-projects{
+  margin-left: 38%;
+}
+
+@media only screen and (max-width: 768px){
+  .top{
+    width: 100%;
+    
+}
+.Main{
+  font-size: 4rem;
+  margin-left: 60px;
+}
+  .project {
+    width: 75%;
+
+    margin-left: 12.5%;
+
+  }
+  .pro-link{
+    margin-top: 110px;
+  }
 }
