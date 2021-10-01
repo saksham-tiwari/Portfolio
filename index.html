@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Playball&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles/index.css">
     <title>Saksham Tiwari</title>
 </head>
@@ -23,13 +27,37 @@
     <!-- <div class="parallax">
 
     </div> -->
-    <div class="top">
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            Saksham Tiwari
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#achieve">Achievements</a>
+          <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <div class="top" id="top">
         <!-- <img src="./images/img1.jpeg" alt="img-main"> -->
         <h3>Hey 👋, Welcome to the page of:</h3>
         <h1 class="Main">Saksham Tiwari</h1>
     </div>
 
-    <div class="about">
+    <div class="about" id="about">
         <h1 class="heading">About Me...</h1>
         <p>
             I am a student of Computer Science branch of Engineering at Ajay Kumar Garg Engineering College, Ghaziabad. My keen interests lie in building websites which work efficiently and provide comfort to the eyes of the viewer. I develop websites using the famous MERN Stack.  Futher below in the page lies description of and link to those projects.
@@ -38,21 +66,69 @@
         </p>
     </div>
     <hr>
-    <div class="skills">
+    <div class="skills" id="skills">
         <h1 class="heading">Skills</h1>
         <div>
-            <img src="./images/wp8903890.jpeg" alt="mern">
-            <img src="./images/java_logo_640.jpg" alt="java">
-            <img src="./images/download.png" alt="html-css-js">
-            <img src="./images/download (1).png" alt="python">
-            <img src="./images/c-logo.png" alt="c-logo">
-            <img src="./images/1_VJvm1cEIqEwFtQACLoEgkw.png" alt="django-py">
-        </div>
+            <span class="container">
+                <img src="./images/wp8903890.jpeg" alt="Avatar" class="image">
+                <span class="middle">
+                    <div id="progressbar">
+                        <div style="width: 65%;">65%</div>
+                      </div>
+                  <span class="text">Progress</span>
+                </span>
+              </span>
+            <span class="container">
+               <img src="./images/java_logo_640.jpg" alt="Avatar" class="image">
+               <span class="middle">
+                <div id="progressbar">
+                    <div style="width: 50%;">50%</div>
+                  </div>
+              <span class="text">Progress</span>
+               </span>
+            </span>
+            <span class="container">
+                <img src="./images/download.png" alt="Avatar" class="image">
+                <span class="middle">
+                    <div id="progressbar">
+                        <div style="width: 90%;">90%</div>
+                      </div>
+                  <span class="text">Progress</span>
+                </span>
+              </span>
+              <span class="container">
+                <img src="./images/download (1).png" alt="Avatar" class="image">
+                <span class="middle">
+                    <div id="progressbar">
+                        <div style="width: 50%;">50%</div>
+                      </div>
+                  <span class="text">Progress</span>
+                </span>
+              </span>
+
+              <span class="container">
+                <img src="./images/c-logo.png" alt="Avatar" class="image">
+                <span class="middle">
+                    <div id="progressbar">
+                        <div style="width: 75%;">75%</div>
+                      </div>
+                  <span class="text">Progress</span>
+                </span>
+              </span>
+              <span class="container">
+                <img src="./images/1_VJvm1cEIqEwFtQACLoEgkw.png" alt="Avatar" class="image">
+                <span class="middle">
+                    <div id="progressbar">
+                        <div style="width: 20%;">20%</div>
+                      </div>
+                  <span class="text">Progress</span>
+                </span>
+              </span>
+            </div>
         
     </div>
-    <hr>
 
-    <div class="projects" >
+    <div class="projects" id="projects" >
         <h1 class="heading">My projects</h1>
         <div class="project one">
             <h3 class="pro-link"> 
@@ -81,10 +157,38 @@
             </h3>
             <p>A React website to keep notes of important upcoming events, tasks and any stuff you want in a very minimalist manner. Basically a Keep notes clone.</p>
             <a href="https://thekeeperapp.netlify.app/" class="link-projects">Link...</a>
+
         </div>
     </div>
     <hr>
+    <div class="achieve" id="achieve">
+        <h1 class="heading">Achievements</h1>
+        <div class="card">
+            <img src="./images/achieve2.jpg" alt="vigyanam" class="achieve-img">
+            <div class="container2">
+              <h4><b>Vigyanam'21</b></h4>
+              <p>Second position.</p>
+            </div>
+          </div>
+        <div class="card">
+            <img src="./images/achieve1.jpg" alt="Avatar" class="achieve-img">
+            <div class="container2">
+              <h4><b>Ideathon by Pheonix</b></h4>
+              <p>Third Position</p>
+            </div>
+        </div>  
+    </div>
+    <br>
+    <br>
+    <br>
 
-    
+  
+    <footer id="contact">    
+        <a href="https://github.com/saksham-tiwari"><i class="fa fa-github social"></i></a>
+        <a href="https://www.linkedin.com/in/saksham-tiwari-2346a2204/"><i class="fa fa-linkedin-square social"></i></a>
+        <a href="https://www.instagram.com/_saksham_tiwari_/"><i class="fa fa-instagram social"></i></a>
+        <div>Made with ❤ by Saksham T.</div>
+
+    </footer>
 </body>
 </html>

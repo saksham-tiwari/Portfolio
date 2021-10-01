@@ -41,6 +41,67 @@
 body{
   margin:0;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+
+}
+
+.nav {
+  height: 60px;
+  width: 100%;
+  background-color: rgb(2, 2, 66);
+  position: fixed;
+  z-index: 1;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 34px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+  margin-left: 40px;
+  font-family: 'Playball', cursive;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+  font-family: 'segoe ui';
+
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+
+
+
 .top{
     background-image: url("../images/img1.jpg");
     margin-top: -19px;
@@ -124,6 +185,8 @@ hr{
   transition: all 0.6s ease;
   background-size: 125%;
   background-position-x: -30px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
 }
 
 .pro-link{
@@ -175,23 +238,157 @@ hr{
   padding-left:  5%;
 }
 
-.skills img:hover{
-  background-image: 
-  linear-gradient(
-    rgba(0, 0, 0, 0.55), 
-    rgba(0, 0, 0, 0.45)
-  )
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: inline-block;
+  width: 50%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position:absolute;
+  margin-top: -30%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.5;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
 }
 
 
+#progressbar {
+  background-color: black;
+  border-radius: 13px;
+  /* (height of inner div) / 2 + padding */
+  padding: 3px;
+}
+
+#progressbar>div {
+  background-color: rgb(255, 65, 31);
+  width: 70%;
+  /* Adjust with JavaScript */
+  height: 20px;
+  border-radius: 10px;
+}
+
+.achieve-img{
+  width: 100%;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 40%;
+  transition: 0.3s;
+  display: inline-block;
+  margin-left: 5%;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card img{
+  height: 250px;
+}
+
+/* Add some padding inside the card container */
+.container2 {
+  padding: 2px 16px;
+}
+
+footer{
+  text-align: center;
+  background-color: rgb(2, 2, 66);
+  color: white;
+  padding: 2%;
+}
+
+.social{
+  font-size: 36px;
+  color: white;
+}
+
 @media only screen and (max-width: 768px){
-  .top{
+
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
     width: 100%;
-    
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+
+  .top{
+    width: 100%; 
 }
 .Main{
   font-size: 4rem;
   margin-left: 60px;
+}
+.skills img{
+  width:40%;
+  height: 180;
+  margin-left: 4%;
 }
   .project {
     width: 75%;
